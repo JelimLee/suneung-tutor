@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/*
+ * rimstudy design tokens.
+ * Tailwind v4 @theme => generates utilities like bg-cream, text-ink,
+ * bg-pink, text-pink, bg-sage, border-sage, etc.
+ */
+@theme {
+  /* Cream backgrounds */
+  --color-cream: #fdf8f0;
+  --color-cream-100: #fbf3e6;
+  --color-cream-200: #f5ead6;
+
+  /* Ink / text */
+  --color-ink: #3a3226;
+  --color-ink-muted: #7a7060;
+
+  /* Pink accent (pills / buttons) */
+  --color-pink: #f28fb5;
+  --color-pink-600: #e56f9c;
+  --color-pink-50: #fdeef4;
+
+  /* Sage tags */
+  --color-sage: #8fae8b;
+  --color-sage-600: #6f9069;
+  --color-sage-50: #eef3ec;
+
+  --font-sans: system-ui, 'Pretendard', 'Apple SD Gothic Neo', 'Segoe UI',
+    Roboto, sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

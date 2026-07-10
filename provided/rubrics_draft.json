@@ -1,0 +1,2104 @@
+[
+  {
+    "id": "SN2027_ch05_01",
+    "question_type": "어법",
+    "difficulty": 4,
+    "passage": "Climate change will affect different parts of the world (1)differently. For people at high latitudes, small amounts of climate change may be beneficial by reducing the amount of energy people require to heat their homes in the winter and (2)lengthening growing seasons for farmers, while for people in the tropics, the same climate changes could bring disease, crop failure, and deadly heat waves. For instance, Rita Colwell, the former director of the US National Science Foundation, and her colleagues discovered (3)that they could predict cholera outbreaks in tropical countries by observing increases in the temperature and the sea level of tropical oceans. Even within a single city, such as Chicago, people may disagree about (4)whether the benefits of milder winters outweigh the risks of severe summer heat waves. Balancing the benefits to some people against the harms to others (5)are not a scientific problem with a correct answer that can be determined by the scientific method; it is an ethical and policy question best left to the policy process.",
+    "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+    "choices": [
+      "differently",
+      "lengthening",
+      "that",
+      "whether",
+      "are"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "기후변화",
+        "accept": [
+          "기후변화의 영향",
+          "지구온난화",
+          "기후변화로 인한 이익과 피해",
+          "지역별 기후변화 영향",
+          "기후변화의 지역차"
+        ],
+        "reject_too_narrow": [
+          "콜레라 발생",
+          "시카고의 겨울 날씨",
+          "작물 재배기간 연장",
+          "여름철 폭염"
+        ],
+        "reject_too_broad": [
+          "환경",
+          "자연현상",
+          "사회 문제",
+          "인간과 자연"
+        ],
+        "reject_wrong": [
+          "경제성장",
+          "기술혁신",
+          "산업화",
+          "에너지 절약 방법"
+        ],
+        "note": "기후변화가 지역에 따라 상이한 영향(이익/피해)을 준다는 방향이면 accept, 특정 사례(콜레라, 시카고 등)로 좁히면 too_narrow, 환경·사회 등 상위어는 too_broad로 채점"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "기후변화",
+        "지역별",
+        "이익과 피해",
+        "형평성",
+        "윤리적 판단",
+        "정책"
+      ],
+      "answer": 5,
+      "sentences": [
+        "Climate change will affect different parts of the world (1)differently.",
+        "For people at high latitudes, small amounts of climate change may be beneficial by reducing the amount of energy people require to heat their homes in the winter and (2)lengthening growing seasons for farmers, while for people in the tropics, the same climate changes could bring disease, crop failure, and deadly heat waves.",
+        "For instance, Rita Colwell, the former director of the US National Science Foundation, and her colleagues discovered (3)that they could predict cholera outbreaks in tropical countries by observing increases in the temperature and the sea level of tropical oceans.",
+        "Even within a single city, such as Chicago, people may disagree about (4)whether the benefits of milder winters outweigh the risks of severe summer heat waves.",
+        "Balancing the benefits to some people against the harms to others (5)are not a scientific problem with a correct answer that can be determined by the scientific method; it is an ethical and policy question best left to the policy process."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch05_02",
+    "question_type": "어법",
+    "difficulty": 4,
+    "passage": "The Australian social psychologist Nick Haslam coined the term \"concept creep\" to describe how harm-related concepts have crept to encompass broader meanings. Historically, the definition of each of these words (A)[was / were] relatively tight, referring to a small set of severe harms, but over time these definitions have expanded to include a greater set of less severe examples. The concept of abuse was once understood to involve only physical assault, but now some consider (B)[it / that] abusive to let your kid walk home alone. The concept of trauma once focused on directly experiencing or witnessing violence, but has expanded to involve watching violent movies or even having your values (C)[challenge / challenged].",
+    "question": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "choices": [
+      "was ... it ... challenge",
+      "were ... that ... challenge",
+      "was ... that ... challenged",
+      "were ... it ... challenged",
+      "was ... it ... challenged"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "개념 확장",
+        "accept": [
+          "개념 확장",
+          "의미 확장",
+          "개념 팽창",
+          "해악 개념의 확대",
+          "용어의 의미 확대",
+          "concept creep"
+        ],
+        "reject_too_narrow": [
+          "학대",
+          "트라우마",
+          "아동 방임",
+          "폭력 목격"
+        ],
+        "reject_too_broad": [
+          "심리학",
+          "사회",
+          "언어",
+          "인간관계"
+        ],
+        "reject_wrong": [
+          "행복 추구",
+          "성공 전략",
+          "환경 보호",
+          "경제 성장"
+        ],
+        "note": "해악 관련 개념(학대, 트라우마 등)의 의미가 시간이 지나며 더 가볍고 넓은 사례까지 포함하도록 확장되었다는 방향이면 accept. 특정 사례(학대/트라우마)만 언급하면 too_narrow, 심리학·사회 전반이면 too_broad."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "개념 확장",
+        "해악",
+        "트라우마",
+        "학대",
+        "의미 확대",
+        "기준 완화"
+      ],
+      "answer": 5,
+      "sentences": [
+        "The Australian social psychologist Nick Haslam coined the term \"concept creep\" to describe how harm-related concepts have crept to encompass broader meanings.",
+        "Historically, the definition of each of these words (A)[was / were] relatively tight, referring to a small set of severe harms, but over time these definitions have expanded to include a greater set of less severe examples.",
+        "The concept of abuse was once understood to involve only physical assault, but now some consider (B)[it / that] abusive to let your kid walk home alone.",
+        "The concept of trauma once focused on directly experiencing or witnessing violence, but has expanded to involve watching violent movies or even having your values (C)[challenge / challenged]."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch05_03",
+    "question_type": "어법",
+    "difficulty": 4,
+    "passage": "In the past, it was often assumed that competence (1)acquired in the first language (L1) was qualitatively different from that in a second language (L2). This privileging of the \"native language\" led to many popular misconceptions, such as believing that children of bilingual parents would never fully acquire either language, (2)remaining somehow linguistically disadvantaged. Such claims are held by many in countries (3)where a single language is politically or socially dominant. (4)What this view must be wrong can easily be seen from the fact that many people in the world are speaking more than one language. Even in (5)supposedly monolingual nations like the United States, at least 20 percent of the population regularly spoke a language other than English.",
+    "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+    "choices": [
+      "acquired",
+      "remaining",
+      "where",
+      "What",
+      "supposedly"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "이중언어습득",
+        "accept": [
+          "이중언어",
+          "이중언어사용",
+          "다중언어사용",
+          "언어습득",
+          "모국어와외국어",
+          "제1언어제2언어"
+        ],
+        "reject_too_narrow": [
+          "미국영어사용현황",
+          "특정국가언어정책",
+          "단일언어국가통계"
+        ],
+        "reject_too_broad": [
+          "언어",
+          "의사소통",
+          "사회",
+          "문화"
+        ],
+        "reject_wrong": [
+          "교육방법",
+          "번역기술",
+          "독서습관"
+        ],
+        "note": "이중언어(또는 다중언어) 습득과 그에 대한 오해라는 방향이면 인정, 특정 국가·통계 등 세부 사례로 좁히면 거부, '언어' 등 지나친 상위어는 거부."
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "-",
+        "-",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "이중언어",
+        "완전한 습득",
+        "오해",
+        "다중언어 사용",
+        "모국어 특권화"
+      ],
+      "answer": 4,
+      "sentences": [
+        "In the past, it was often assumed that competence (1)acquired in the first language (L1) was qualitatively different from that in a second language (L2).",
+        "This privileging of the \"native language\" led to many popular misconceptions, such as believing that children of bilingual parents would never fully acquire either language, (2)remaining somehow linguistically disadvantaged.",
+        "Such claims are held by many in countries (3)where a single language is politically or socially dominant. (4)What this view must be wrong can easily be seen from the fact that many people in the world are speaking more than one language.",
+        "Even in (5)supposedly monolingual nations like the United States, at least 20 percent of the population regularly spoke a language other than English."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch05_04",
+    "question_type": "어법",
+    "difficulty": 4,
+    "passage": "From Descartes to the present, reason has been prized in Western culture. As we are led to believe, it is the power (1)to reason that sets humans above the remainder of the animal kingdom, and is essential for human survival. Literary study suggests otherwise. Among the most important objections are (2)those of the French literary theorist Jacques Derrida. Derrida's writings, often identified as deconstructionist, (3)is ambiguous and open to many interpretations. First, suggests Derrida, rational arguments bring about a massive suppression of meaning. Second, if closely (4)examined, all rational arguments will collapse. Rationality, then, is not a foundation for anything, or as a way of deciding on (5)what is moral or worthwhile.",
+    "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+    "choices": [
+      "to reason",
+      "those",
+      "is",
+      "examined",
+      "what"
+    ],
+    "answer": 3,
+    "rubric": {
+      "topic": {
+        "canonical": "이성(합리성)",
+        "accept": [
+          "이성",
+          "합리성",
+          "합리주의",
+          "이성 비판",
+          "이성의 한계"
+        ],
+        "reject_too_narrow": [
+          "데리다",
+          "해체주의",
+          "문학이론",
+          "프랑스 이론"
+        ],
+        "reject_too_broad": [
+          "인간",
+          "문화",
+          "사회",
+          "학문"
+        ],
+        "reject_wrong": [
+          "동물",
+          "생존",
+          "역사",
+          "심리학"
+        ],
+        "note": "이성/합리성 자체 또는 그에 대한 비판이라는 방향이면 인정, 데리다 개인이나 해체주의라는 세부 이론명으로만 답하면 너무 좁은 것으로 처리, 인간/문화 등 지나치게 포괄적이면 거부"
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "-",
+        "-",
+        "+",
+        "+",
+        "?",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "이성",
+        "합리성",
+        "데리다",
+        "해체주의",
+        "붕괴",
+        "의미 억압"
+      ],
+      "answer": 3,
+      "sentences": [
+        "From Descartes to the present, reason has been prized in Western culture.",
+        "As we are led to believe, it is the power (1)to reason that sets humans above the remainder of the animal kingdom, and is essential for human survival.",
+        "Literary study suggests otherwise.",
+        "Among the most important objections are (2)those of the French literary theorist Jacques Derrida.",
+        "Derrida's writings, often identified as deconstructionist, (3)is ambiguous and open to many interpretations.",
+        "First, suggests Derrida, rational arguments bring about a massive suppression of meaning.",
+        "Second, if closely (4)examined, all rational arguments will collapse.",
+        "Rationality, then, is not a foundation for anything, or as a way of deciding on (5)what is moral or worthwhile."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch05_05",
+    "question_type": "어법",
+    "difficulty": 4,
+    "passage": "The impression of authenticity about a person results from an evaluation by the perceiver (1)that the information derived from that person can be used to take adaptive decisions. Cues are features of the environment that have not (2)necessarily evolved for communication purposes but that nonetheless convey information. In other words, a social cue is an opportunity for receivers (3)to extract information about an individual. Social signals are actions or structures that evolved as a result of (4)their effect on other organisms. Even though signals might not always contain information, signaling is expected to be reliable (5)whatever the costs of deceptive signals exceed the benefits of providing honest cues.",
+    "question": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+    "choices": [
+      "that",
+      "necessarily",
+      "to extract",
+      "their",
+      "whatever"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "사회적 신호",
+        "accept": [
+          "신호",
+          "단서",
+          "사회적 신호",
+          "사회적 단서",
+          "신호와 단서",
+          "의사소통 신호"
+        ],
+        "reject_too_narrow": [
+          "기만 신호",
+          "정직 신호",
+          "적응적 의사결정"
+        ],
+        "reject_too_broad": [
+          "의사소통",
+          "진화",
+          "생물학"
+        ],
+        "reject_wrong": [
+          "언어 습득",
+          "감정 표현",
+          "기억력"
+        ],
+        "note": "사회적 신호·단서가 정보를 전달하고 그 신뢰성이 형성되는 방식에 초점을 맞춘 답만 인정, 지나치게 세부적(기만/정직 신호)이거나 과도하게 포괄적(의사소통 전반)인 답은 제외"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "신호",
+        "단서",
+        "신뢰성",
+        "정보전달",
+        "진정성",
+        "기만"
+      ],
+      "answer": 5,
+      "sentences": [
+        "The impression of authenticity about a person results from an evaluation by the perceiver (1)that the information derived from that person can be used to take adaptive decisions.",
+        "Cues are features of the environment that have not (2)necessarily evolved for communication purposes but that nonetheless convey information.",
+        "In other words, a social cue is an opportunity for receivers (3)to extract information about an individual.",
+        "Social signals are actions or structures that evolved as a result of (4)their effect on other organisms.",
+        "Even though signals might not always contain information, signaling is expected to be reliable (5)whatever the costs of deceptive signals exceed the benefits of providing honest cues."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch06_01",
+    "question_type": "어휘",
+    "difficulty": 4,
+    "passage": "It was once believed that development was either continuous or discontinuous, but not both. Today, scientists agree that development (1)includes both continuity and discontinuity. Consider (2)physical growth. We often think of increases in height as involving a slow and steady process, illustrating continuous change. However, when researchers measured infants' height every day, they discovered that infants have growth days and nongrowth days, (3)illustrating discontinuous change. In this example, monthly measurements of infant height suggest gradual increases, but daily measurements show (4)reversals of growth, each lasting 24 hours or less. Thus, whether a phenomenon is described as continuous or discontinuous can vary depending on the (5)perspective.",
+    "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "choices": [
+      "includes",
+      "physical",
+      "illustrating",
+      "reversals",
+      "perspective"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "발달",
+        "accept": [
+          "발달",
+          "성장",
+          "인간발달",
+          "발달과정",
+          "신체발달"
+        ],
+        "reject_too_narrow": [
+          "영아 키",
+          "일일 성장측정",
+          "월간 신장변화"
+        ],
+        "reject_too_broad": [
+          "인간",
+          "삶",
+          "자연현상",
+          "세상"
+        ],
+        "reject_wrong": [
+          "유전",
+          "학습",
+          "교육방법"
+        ],
+        "note": "소재는 '발달(발달과정, 성장 등)'을 가리키는 단어면 인정. 신체 성장의 세부 예시(키, 일일측정 등)로 지나치게 좁히면 reject_too_narrow, 인간/삶처럼 지나치게 포괄적이면 reject_too_broad."
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "-",
+        "+",
+        "?",
+        "-",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "발달",
+        "연속성",
+        "불연속성",
+        "관점",
+        "측정간격",
+        "성장"
+      ],
+      "answer": 4,
+      "sentences": [
+        "It was once believed that development was either continuous or discontinuous, but not both.",
+        "Today, scientists agree that development (1)includes both continuity and discontinuity.",
+        "Consider (2)physical growth.",
+        "We often think of increases in height as involving a slow and steady process, illustrating continuous change.",
+        "However, when researchers measured infants' height every day, they discovered that infants have growth days and nongrowth days, (3)illustrating discontinuous change.",
+        "In this example, monthly measurements of infant height suggest gradual increases, but daily measurements show (4)reversals of growth, each lasting 24 hours or less.",
+        "Thus, whether a phenomenon is described as continuous or discontinuous can vary depending on the (5)perspective."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch06_02",
+    "question_type": "어휘",
+    "difficulty": 4,
+    "passage": "All events being equally real doesn't mean that all events deserve the same cognitive or emotional response. The adaptive (1)advantages of this manner of representing the world help explain why it is a feature of our species' cognitive systems. Thinking of the world as divided into past, present, and future can be (2)useful even if the world neither is dynamic nor even appears dynamic. It is essential to our survival that we respond (3)differentially to events according to their causal relation to us. Our ancestors (4)derived tremendous advantage from their capacity to plan ahead and to engage in collaborative activities. The complex collaborative activities that (5)ignore explicit time consciousness also define the evolutionary niche humans have enjoyed.",
+    "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "choices": [
+      "advantages",
+      "useful",
+      "differentially",
+      "derived",
+      "ignore"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "시간인식",
+        "accept": [
+          "시간의식",
+          "시간감각",
+          "시간지각",
+          "과거현재미래구분",
+          "시간관념"
+        ],
+        "reject_too_narrow": [
+          "협력활동",
+          "인과관계판단",
+          "조상의생존전략",
+          "계획수립능력"
+        ],
+        "reject_too_broad": [
+          "인간",
+          "진화",
+          "삶",
+          "사회",
+          "생존"
+        ],
+        "reject_wrong": [
+          "공간인식",
+          "언어능력",
+          "감정표현",
+          "도덕적판단"
+        ],
+        "note": "인간이 시간을 과거·현재·미래로 나누어 인식하는 것이 진화적으로 적응적이라는 방향이면 accept, 협력활동이나 생존 자체 등 세부/상위 개념은 reject"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "?",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "시간인식",
+        "적응적이점",
+        "생존",
+        "계획",
+        "협력활동",
+        "진화"
+      ],
+      "answer": 5,
+      "sentences": [
+        "All events being equally real doesn't mean that all events deserve the same cognitive or emotional response.",
+        "The adaptive (1)advantages of this manner of representing the world help explain why it is a feature of our species' cognitive systems.",
+        "Thinking of the world as divided into past, present, and future can be (2)useful even if the world neither is dynamic nor even appears dynamic.",
+        "It is essential to our survival that we respond (3)differentially to events according to their causal relation to us.",
+        "Our ancestors (4)derived tremendous advantage from their capacity to plan ahead and to engage in collaborative activities.",
+        "The complex collaborative activities that (5)ignore explicit time consciousness also define the evolutionary niche humans have enjoyed."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch06_03",
+    "question_type": "어휘",
+    "difficulty": 4,
+    "passage": "Many animals have evolved mechanisms for picking out signals from the noise. Imagine people organizing themselves into groups by language and moving to (1)different parts of the room. Standing in the center, your mind will tune into the group that speaks languages that you personally (2)understand, and filter out the rest. Tuning into recognizable sounds and tuning out unintelligible ones, the listener expends (3)more energy. As species evolve their ability to hear, they also evolve to (4)favor specific frequencies. In any ecosystem, different species partition themselves to (5)reduce competition for different parts of the soundscape spectrum.",
+    "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "choices": [
+      "different",
+      "understand",
+      "more",
+      "favor",
+      "reduce"
+    ],
+    "answer": 3,
+    "rubric": {
+      "topic": {
+        "canonical": "선택적 청취",
+        "accept": [
+          "선택적 청취",
+          "신호 여과",
+          "청각 진화",
+          "소리 분할",
+          "음향 니치 분할",
+          "칵테일파티 효과"
+        ],
+        "reject_too_narrow": [
+          "언어 그룹화",
+          "방 안 대화",
+          "주파수 선호",
+          "특정 종의 청각"
+        ],
+        "reject_too_broad": [
+          "동물",
+          "생물학",
+          "자연",
+          "생태계"
+        ],
+        "reject_wrong": [
+          "소음 공해",
+          "청각 장애",
+          "음악 감상",
+          "소리 오염"
+        ],
+        "note": "동물이 소음 속에서 신호(원하는 소리)를 골라내는 선택적 청취/필터링 및 종 간 주파수 분할(경쟁 감소)이라는 방향이면 accept. 언어그룹, 방 배치 등 예시의 세부사항에 집중하면 too_narrow, 단순히 '동물' '자연'이면 too_broad."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "-",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "소음",
+        "신호",
+        "필터링",
+        "진화",
+        "주파수",
+        "경쟁 감소"
+      ],
+      "answer": 3,
+      "sentences": [
+        "Many animals have evolved mechanisms for picking out signals from the noise.",
+        "Imagine people organizing themselves into groups by language and moving to (1)different parts of the room.",
+        "Standing in the center, your mind will tune into the group that speaks languages that you personally (2)understand, and filter out the rest.",
+        "Tuning into recognizable sounds and tuning out unintelligible ones, the listener expends (3)more energy.",
+        "As species evolve their ability to hear, they also evolve to (4)favor specific frequencies.",
+        "In any ecosystem, different species partition themselves to (5)reduce competition for different parts of the soundscape spectrum."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch06_04",
+    "question_type": "어휘",
+    "difficulty": 4,
+    "passage": "Money is both a tool to help us create working relationships with strangers and a mirror that reflects our values. When our ancestors created money, they were worried about security rather than intimacy. They used money to (A)[widen / restrict] their connections with people outside their intimate circles. Within their (B)[close-knit / loosely-knit] groups, they didn't need money to clarify or maintain their relationships. Our ancestors could take their sense of belonging for granted, as they (C)[frequently / rarely] traveled beyond the boundaries of their communities.",
+    "question": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "choices": [
+      "widen ... close-knit ... frequently",
+      "widen ... close-knit ... rarely",
+      "restrict ... close-knit ... frequently",
+      "restrict ... loosely-knit ... rarely",
+      "widen ... loosely-knit ... rarely"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "화폐",
+        "accept": [
+          "돈",
+          "화폐의 기원",
+          "화폐의 역할",
+          "화폐와 인간관계",
+          "돈의 기능"
+        ],
+        "reject_too_narrow": [
+          "물물교환",
+          "신용카드",
+          "화폐 단위",
+          "온라인 결제 시스템"
+        ],
+        "reject_too_broad": [
+          "사회",
+          "경제",
+          "문명",
+          "인간관계 전반"
+        ],
+        "reject_wrong": [
+          "우정",
+          "신뢰",
+          "종교",
+          "공동체 정체성"
+        ],
+        "note": "화폐가 낯선 사람과의 관계를 형성/확장하는 도구라는 방향이면 accept, 화폐 자체의 세부 형태나 무관한 개념은 reject"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "화폐",
+        "낯선 사람",
+        "관계 확장",
+        "친밀한 집단",
+        "안전"
+      ],
+      "answer": 2,
+      "sentences": [
+        "Money is both a tool to help us create working relationships with strangers and a mirror that reflects our values.",
+        "When our ancestors created money, they were worried about security rather than intimacy.",
+        "They used money to (A)[widen / restrict] their connections with people outside their intimate circles.",
+        "Within their (B)[close-knit / loosely-knit] groups, they didn't need money to clarify or maintain their relationships.",
+        "Our ancestors could take their sense of belonging for granted, as they (C)[frequently / rarely] traveled beyond the boundaries of their communities."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch06_05",
+    "question_type": "어휘",
+    "difficulty": 4,
+    "passage": "Supplied with water, any good marathoner probably has the endurance to chase down a zebra. However, there's more to persistence hunting than endurance. Endurance hunters need to be able to (1)recognize specific target prey and then track that specific individual. To exploit our endurance (2)edge, we need to track a specific individual for several hours. The ability to distinguish the target from other zebras is crucial since many herd animals have a (3)defensive strategy in which they circle back to their herd. If you can't (4)randomly target the one you've been chasing, then you could end up chasing a fresh zebra. Thus, persistence hunters must be able to track and (5)identify individuals.",
+    "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "choices": [
+      "recognize",
+      "edge",
+      "defensive",
+      "randomly",
+      "identify"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "지속사냥",
+        "accept": [
+          "지속사냥",
+          "인내사냥",
+          "끈기사냥",
+          "추적사냥",
+          "사냥꾼의 추적법"
+        ],
+        "reject_too_narrow": [
+          "얼룩말 사냥",
+          "마라톤 완주",
+          "물 섭취의 중요성"
+        ],
+        "reject_too_broad": [
+          "사냥",
+          "동물",
+          "생존"
+        ],
+        "reject_wrong": [
+          "마라톤 훈련법",
+          "동물 복지",
+          "야생동물 보호"
+        ],
+        "note": "소재는 '지속사냥(persistence hunting)에서 특정 개체를 추적·식별하는 능력'에 초점. 얼룩말이나 마라톤처럼 소재를 예시 차원으로 좁히면 too_narrow, '사냥'이나 '동물'처럼 지나치게 포괄적이면 too_broad."
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "-",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "지속사냥",
+        "특정 개체",
+        "추적",
+        "식별",
+        "구분 능력"
+      ],
+      "answer": 4,
+      "sentences": [
+        "Supplied with water, any good marathoner probably has the endurance to chase down a zebra.",
+        "However, there's more to persistence hunting than endurance.",
+        "Endurance hunters need to be able to (1)recognize specific target prey and then track that specific individual.",
+        "To exploit our endurance (2)edge, we need to track a specific individual for several hours.",
+        "The ability to distinguish the target from other zebras is crucial since many herd animals have a (3)defensive strategy in which they circle back to their herd.",
+        "If you can't (4)randomly target the one you've been chasing, then you could end up chasing a fresh zebra.",
+        "Thus, persistence hunters must be able to track and (5)identify individuals."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch07_01",
+    "question_type": "빈칸",
+    "difficulty": 4,
+    "passage": "A strong indication that humans are reasoning beings is that they apply their moral concepts in ______________ ways in particular situations or contexts. People typically weigh and balance different considerations when making decisions within the parameters of situations. The evidence is clear that people in different cultures support individual rights in some situations and not others. The main point is that neither fixed attitudes nor the force of situations determines decisions. People recognize the different moral and social components and evaluate their relative merits.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "flexible",
+      "universal",
+      "automated",
+      "beneficial",
+      "creative"
+    ],
+    "answer": 1,
+    "rubric": {
+      "topic": {
+        "canonical": "도덕적 판단의 유연성",
+        "accept": [
+          "도덕 개념의 유연한 적용",
+          "상황에 따른 도덕적 판단",
+          "맥락적 도덕 판단",
+          "인간의 유연한 사고",
+          "상황별 도덕적 유연성"
+        ],
+        "reject_too_narrow": [
+          "개인의 권리 존중",
+          "특정 문화의 권리 차이",
+          "상황별 결정 사례",
+          "서로 다른 문화의 권리 인정"
+        ],
+        "reject_too_broad": [
+          "인간",
+          "사회",
+          "삶",
+          "도덕",
+          "사고"
+        ],
+        "reject_wrong": [
+          "고정된 신념",
+          "획일적 규칙 적용",
+          "경직된 도덕관",
+          "상황에 좌우되는 무원칙적 판단"
+        ],
+        "note": "핵심은 '유연하게(상황에 맞게) 도덕 개념을 적용한다'는 방향이 담겨야 함. 개별 사례(권리, 문화 차이)만 언급하면 too_narrow, 단순히 인간/사회/도덕 등 포괄적 단어만 쓰면 too_broad, 고정성·획일성을 강조하면 wrong."
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "유연성",
+        "상황",
+        "맥락",
+        "도덕적 개념",
+        "균형",
+        "판단"
+      ],
+      "answer": 1,
+      "sentences": [
+        "A strong indication that humans are reasoning beings is that they apply their moral concepts in ______________ ways in particular situations or contexts.",
+        "People typically weigh and balance different considerations when making decisions within the parameters of situations.",
+        "The evidence is clear that people in different cultures support individual rights in some situations and not others.",
+        "The main point is that neither fixed attitudes nor the force of situations determines decisions.",
+        "People recognize the different moral and social components and evaluate their relative merits."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch07_02",
+    "question_type": "빈칸",
+    "difficulty": 4,
+    "passage": "As Putnam discusses in Bowling Alone, there has been a notable decline in face-to-face social interactions, leading to an erosion of social capital. Most famously, Putnam pointed to the decline in bowling leagues as a metaphor for social ______________. While more people were bowling than ever before, league bowling dropped by 40 percent from 1970 to 1993. His research depicts a society that has lost many foundational opportunities for communal bonding, giving rise to an era marked by isolation and detachment.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "anxiety",
+      "influence",
+      "development",
+      "maladjustment",
+      "disengagement"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "사회적 유대 감소",
+        "accept": [
+          "사회적 자본 감소",
+          "공동체 결속 약화",
+          "사회적 관계 단절",
+          "사회적 유대감 약화",
+          "사회적 고립 심화"
+        ],
+        "reject_too_narrow": [
+          "볼링 리그 감소",
+          "볼링 인구 증가",
+          "1970년대 볼링 통계",
+          "리그 볼링 참여율"
+        ],
+        "reject_too_broad": [
+          "사회",
+          "인간관계",
+          "삶",
+          "문화",
+          "현대 사회"
+        ],
+        "reject_wrong": [
+          "경제 성장",
+          "기술 발전",
+          "인구 증가",
+          "스포츠 산업 활성화",
+          "여가 활동 증가"
+        ],
+        "note": "사회적 상호작용/유대·공동체 결속의 쇠퇴라는 방향이면 수용, 볼링 자체의 세부 통계로 좁히면 거부, '사회' 등 지나치게 포괄적이면 거부."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "사회적 자본",
+        "유대감 감소",
+        "공동체 결속 약화",
+        "고립",
+        "단절",
+        "disengagement"
+      ],
+      "answer": 5,
+      "sentences": [
+        "As Putnam discusses in Bowling Alone, there has been a notable decline in face-to-face social interactions, leading to an erosion of social capital.",
+        "Most famously, Putnam pointed to the decline in bowling leagues as a metaphor for social ______________.",
+        "While more people were bowling than ever before, league bowling dropped by 40 percent from 1970 to 1993.",
+        "His research depicts a society that has lost many foundational opportunities for communal bonding, giving rise to an era marked by isolation and detachment."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch07_03",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "Ensembles with different structures may encounter different group dynamics. Ford and Davidson studied members of 20 wind quintets. Dynamics inherent in the way the music is scored afford greater opportunities for democracy within the group, such as more equality and interchangeability among musical parts. Members of wind quintets were less likely to identify a clear leader than members of string quartets. Ford and Davidson noted that in most of the quintets, players took equal responsibility for leading the ensemble. The musical structure and social structure of the group ______________________________.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "seem to reflect each other",
+      "become hard to clearly define",
+      "are independent of each other",
+      "reveal the tension within the group",
+      "display a loosely related connection"
+    ],
+    "answer": 1,
+    "rubric": {
+      "topic": {
+        "canonical": "앙상블 구조",
+        "accept": [
+          "앙상블 구조",
+          "합주단 구조",
+          "음악 그룹 구조",
+          "그룹 다이내믹스",
+          "앙상블의 사회적 구조",
+          "합주 형태"
+        ],
+        "reject_too_narrow": [
+          "관악 오중주",
+          "현악 사중주",
+          "리더십 부재 현상",
+          "오중주 연주자 비교"
+        ],
+        "reject_too_broad": [
+          "음악",
+          "예술",
+          "사회",
+          "그룹",
+          "인간관계"
+        ],
+        "reject_wrong": [
+          "악기 연주법",
+          "음악 이론",
+          "작곡 기법",
+          "음악사"
+        ],
+        "note": "앙상블(합주단)의 음악적 구조가 집단의 사회적 역학(리더십, 민주성)에 미치는 영향이라는 방향이면 인정, 특정 악기 편성이나 연주 기술로 좁히면 거부"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "?",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "음악적 구조",
+        "사회적 구조",
+        "반영",
+        "상호관련성",
+        "리더십",
+        "민주성"
+      ],
+      "answer": 1,
+      "sentences": [
+        "Ensembles with different structures may encounter different group dynamics.",
+        "Ford and Davidson studied members of 20 wind quintets.",
+        "Dynamics inherent in the way the music is scored afford greater opportunities for democracy within the group, such as more equality and interchangeability among musical parts.",
+        "Members of wind quintets were less likely to identify a clear leader than members of string quartets.",
+        "Ford and Davidson noted that in most of the quintets, players took equal responsibility for leading the ensemble.",
+        "The musical structure and social structure of the group ______________________________."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch07_04",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "Children will engage with materials more purposefully, and for longer, when there is ______________________________, and thus, something they are interested in figuring out. In studies of toddlers and preschoolers, researchers have found that children spontaneously engage in more exploratory play with a toy designed to be difficult to figure out. When faced with inconsistent and difficult-to-interpret results, children spent more time exploring the lightbox and were more likely to provide causal explanations.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "a specific goal in mind",
+      "some ambiguity involved",
+      "little variation in the outcome",
+      "external guidance from adults",
+      "an immediate reward available"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "모호함",
+        "accept": [
+          "모호함",
+          "불확실성",
+          "애매함",
+          "불명확함",
+          "해석하기 어려움"
+        ],
+        "reject_too_narrow": [
+          "라이트박스 놀이",
+          "장난감 디자인 방식",
+          "인과관계 설명 능력"
+        ],
+        "reject_too_broad": [
+          "교육",
+          "놀이",
+          "아동발달",
+          "학습"
+        ],
+        "reject_wrong": [
+          "보상",
+          "목표설정",
+          "외부지도",
+          "일관성 있는 결과"
+        ],
+        "note": "아이들이 모호하거나 해석하기 어려운 상황에서 더 오래, 더 목적을 갖고 탐구한다는 방향이면 인정. 특정 실험 도구(라이트박스 등)로 좁히면 과협소, '놀이/학습' 등 일반 개념으로만 답하면 과포괄."
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "모호함",
+        "불확실성",
+        "탐구",
+        "호기심",
+        "놀이",
+        "목적성"
+      ],
+      "answer": 2,
+      "sentences": [
+        "Children will engage with materials more purposefully, and for longer, when there is ______________________________, and thus, something they are interested in figuring out.",
+        "In studies of toddlers and preschoolers, researchers have found that children spontaneously engage in more exploratory play with a toy designed to be difficult to figure out.",
+        "When faced with inconsistent and difficult-to-interpret results, children spent more time exploring the lightbox and were more likely to provide causal explanations."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch07_05",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "Context is crucial to the proper interpretation of linguistic utterances. In fact, we should keep in mind that even ______________ can sometimes be used to deceive or mislead. Tom Cowan tells the story of a sea captain who wrote on the ship's log: \"The mate was drunk today.\" The mate took his revenge and recorded on the log: \"The captain was sober today!\" This is literally true but misleadingly implies the captain is usually drunk.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "the literal truth",
+      "a good intention",
+      "precise grammar",
+      "a careful judgment",
+      "cultural differences"
+    ],
+    "answer": 1,
+    "rubric": {
+      "topic": {
+        "canonical": "문자적 진실과 오해",
+        "accept": [
+          "문자적 진실",
+          "진실과 기만",
+          "말의 진실성과 오해",
+          "언어적 기만",
+          "맥락과 해석",
+          "진실이지만 오도하는 표현"
+        ],
+        "reject_too_narrow": [
+          "선장의 항해일지",
+          "선원의 복수",
+          "배 위의 기록 사건",
+          "일지에 적힌 문구"
+        ],
+        "reject_too_broad": [
+          "언어",
+          "의사소통",
+          "진실",
+          "말"
+        ],
+        "reject_wrong": [
+          "문법의 정확성",
+          "선한 의도",
+          "문화 차이",
+          "신중한 판단"
+        ],
+        "note": "문자 그대로는 참이지만 맥락상 오해를 유발할 수 있다는 방향이면 accept; 이야기 속 구체적 사건(선장·선원 일화)에만 초점을 맞추면 too_narrow, 언어/의사소통 등 지나치게 포괄적이면 too_broad로 채점."
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "맥락",
+        "문자적 진실",
+        "오해",
+        "기만",
+        "해석"
+      ],
+      "answer": 1,
+      "sentences": [
+        "Context is crucial to the proper interpretation of linguistic utterances.",
+        "In fact, we should keep in mind that even ______________ can sometimes be used to deceive or mislead.",
+        "Tom Cowan tells the story of a sea captain who wrote on the ship's log: \"The mate was drunk today.\" The mate took his revenge and recorded on the log: \"The captain was sober today!\" This is literally true but misleadingly implies the captain is usually drunk."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch08_01",
+    "question_type": "빈칸",
+    "difficulty": 4,
+    "passage": "Interestingly, if you're sad, then listening to sad music can sometimes improve your mood. The reason is that when you're feeling down, it's often because you feel misunderstood. If you were to listen to happy music while in this state, it would ______________________________. On the other hand, if you put on the right piece of sad music, you can say to yourself, 'That's exactly how I feel. This musician understands me.' So the sad music turns out to be soothing.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "only amplify that feeling of detachment",
+      "repeatedly remind you of old companions",
+      "subtly deceive you into suppressing your emotions",
+      "instantly create a calming and peaceful atmosphere",
+      "strongly motivate you to understand how others feel"
+    ],
+    "answer": 1,
+    "rubric": {
+      "topic": {
+        "canonical": "슬픈 음악의 위로 효과",
+        "accept": [
+          "슬픈 음악과 감정",
+          "음악과 공감",
+          "슬픈 음악의 효과",
+          "음악을 통한 위로",
+          "감정과 음악의 관계"
+        ],
+        "reject_too_narrow": [
+          "행복한 음악의 부작용",
+          "음악 장르별 감정 효과",
+          "슬픈 음악 가사의 의미",
+          "특정 뮤지션과의 공감"
+        ],
+        "reject_too_broad": [
+          "예술",
+          "감정",
+          "심리",
+          "인간관계"
+        ],
+        "reject_wrong": [
+          "음악의 역사",
+          "음악 산업 구조",
+          "청각 능력 향상",
+          "음악 교육 방법"
+        ],
+        "note": "슬픈 음악이 공감을 통해 위로가 된다는 방향이면 accept, 특정 장르·가사 등 세부로 좁히면 too_narrow, 예술/감정 등 상위어면 too_broad."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "-",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "슬픈음악",
+        "공감",
+        "이해받음",
+        "위로",
+        "감정"
+      ],
+      "answer": 1,
+      "sentences": [
+        "Interestingly, if you're sad, then listening to sad music can sometimes improve your mood.",
+        "The reason is that when you're feeling down, it's often because you feel misunderstood.",
+        "If you were to listen to happy music while in this state, it would ______________________________.",
+        "On the other hand, if you put on the right piece of sad music, you can say to yourself, 'That's exactly how I feel.",
+        "This musician understands me.' So the sad music turns out to be soothing."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch08_02",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "There is a long-running debate about what constitutes truth and how to represent it in writing. It is impossible to use words to describe the whole truth of anything. To tell the 'whole truth' of a cup would involve describing it in infinite detail: its colours, its history, how it was made, and so on. Writing can ______________________________, and writers make choices all the time about what to include and what to leave out.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "be judged by readers",
+      "present a distorted reality",
+      "reinforce readers' stereotypes",
+      "show the author's inner world",
+      "only communicate partial truth"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "글쓰기와 진실",
+        "accept": [
+          "글쓰기의 한계",
+          "진실 표현의 한계",
+          "글쓰기와 진실의 관계",
+          "부분적 진실 전달",
+          "언어로 진실을 표현하는 한계"
+        ],
+        "reject_too_narrow": [
+          "컵 묘사",
+          "컵의 역사",
+          "색깔 묘사",
+          "컵의 제작 과정"
+        ],
+        "reject_too_broad": [
+          "언어",
+          "소통",
+          "인간의 삶",
+          "사회"
+        ],
+        "reject_wrong": [
+          "독자의 편견",
+          "저자의 내면세계",
+          "왜곡된 현실",
+          "독자의 판단"
+        ],
+        "note": "글쓰기가 진실 전체를 담을 수 없고 부분적 진실만 전달한다는 방향이면 accept, 특정 예시(컵)로 좁히거나 상위어(언어, 소통)로 확장하면 reject"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "?",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "글쓰기",
+        "부분적 진실",
+        "선택과 생략",
+        "전체 진실 불가능",
+        "묘사의 한계"
+      ],
+      "answer": 5,
+      "sentences": [
+        "There is a long-running debate about what constitutes truth and how to represent it in writing.",
+        "It is impossible to use words to describe the whole truth of anything.",
+        "To tell the 'whole truth' of a cup would involve describing it in infinite detail: its colours, its history, how it was made, and so on.",
+        "Writing can ______________________________, and writers make choices all the time about what to include and what to leave out."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch08_03",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "The shaping of scientific majority opinions takes place through processes of opinion formation. At some stage, the majority opinion is promoted to the rank of scientific consensus; opinion is transformed into scientific knowledge. As such, it is protected from sceptical and critical enquiry. From this point on, ______________________________ comes to be perceived as an expression of hostility to science and may be labelled as the 'manufacture' of doubt and uncertainty.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "the exclusion of other potential hypotheses",
+      "the exercise of critique of the majority opinion",
+      "the modification of data to achieve an intended result",
+      "the strategic use of the media to shape public opinion",
+      "the attempt to explain illogical phenomena scientifically"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "과학적 합의",
+        "accept": [
+          "과학적 합의",
+          "다수의견의 권위화",
+          "주류 과학 의견",
+          "과학계 컨센서스",
+          "다수 의견"
+        ],
+        "reject_too_narrow": [
+          "기후변화 논쟁",
+          "백신 반대 운동",
+          "진화론 논쟁",
+          "특정 학설의 반박 사례"
+        ],
+        "reject_too_broad": [
+          "과학",
+          "지식",
+          "진리",
+          "사회",
+          "인간의 사고"
+        ],
+        "reject_wrong": [
+          "과학적 발견 과정",
+          "실험 설계 방법",
+          "연구 자금 조달",
+          "데이터 조작 문제"
+        ],
+        "note": "핵심은 '과학적 다수의견이 합의로 격상되어 비판을 차단하는 현상' 방향이면 인정, 특정 논쟁 사례로 좁히거나 '과학' 자체처럼 포괄하면 거부"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "?",
+        "?",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "과학적 합의",
+        "비판적 탐구",
+        "다수의견",
+        "회의적 검토",
+        "반과학으로 낙인",
+        "의심 조장"
+      ],
+      "answer": 2,
+      "sentences": [
+        "The shaping of scientific majority opinions takes place through processes of opinion formation.",
+        "At some stage, the majority opinion is promoted to the rank of scientific consensus; opinion is transformed into scientific knowledge.",
+        "As such, it is protected from sceptical and critical enquiry.",
+        "From this point on, ______________________________ comes to be perceived as an expression of hostility to science and may be labelled as the 'manufacture' of doubt and uncertainty."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch08_04",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "Science is frequently described as a method that starts with a hypothesis and ends in a definitive conclusion. But history commonly recognises people as scientists ______________________________. Physics is full of amazing discoveries that resulted not from experimentation but from mathematical deductions, or hours of watching the sky. While evolution can be demonstrated in the laboratory today, Darwin had no such luxury and relied on comparisons between diverse environments.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "when they have challenged existing theories",
+      "who have not strictly followed such a method",
+      "who have invented new experimental methods",
+      "whose hypotheses were not supported by others",
+      "when later experimentation confirmed their ideas"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "과학적 방법론",
+        "accept": [
+          "과학적 방법",
+          "과학 연구 방식",
+          "과학자의 연구 방법",
+          "과학의 방법론",
+          "가설-검증 과정"
+        ],
+        "reject_too_narrow": [
+          "다윈의 진화론",
+          "물리학의 발견",
+          "천체 관측",
+          "실험 설계"
+        ],
+        "reject_too_broad": [
+          "과학",
+          "학문",
+          "지식",
+          "연구"
+        ],
+        "reject_wrong": [
+          "역사",
+          "수학",
+          "생물학 이론",
+          "철학"
+        ],
+        "note": "과학이 항상 가설-검증-결론의 정형화된 방법을 따르지 않는다는 방향이면 인정, 특정 과학자·분야로 좁히면 too_narrow, '과학' 자체처럼 지나치게 포괄적이면 too_broad로 처리."
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "-",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "과학적 방법",
+        "가설",
+        "실험",
+        "예외",
+        "다양한 접근"
+      ],
+      "answer": 2,
+      "sentences": [
+        "Science is frequently described as a method that starts with a hypothesis and ends in a definitive conclusion.",
+        "But history commonly recognises people as scientists ______________________________.",
+        "Physics is full of amazing discoveries that resulted not from experimentation but from mathematical deductions, or hours of watching the sky.",
+        "While evolution can be demonstrated in the laboratory today, Darwin had no such luxury and relied on comparisons between diverse environments."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch08_05",
+    "question_type": "빈칸",
+    "difficulty": 5,
+    "passage": "Restaurateurs ______________________________. They know that the more customers you seat, the more will come in the door. This is why they seat the first customers close to the window and don't mind a line of people waiting. They understand that the more people signaling their interest, the greater the reinforcing feedback loop. People who were on the fence will be drawn in by the apparent interest.",
+    "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "choices": [
+      "are aware of the effects of signaling",
+      "prioritize communication above all else",
+      "stay open later to serve more customers",
+      "attract customers through aggressive advertising",
+      "recognize the importance of expansion for growth"
+    ],
+    "answer": 1,
+    "rubric": {
+      "topic": {
+        "canonical": "사회적 증거",
+        "accept": [
+          "사회적 증거",
+          "신호효과",
+          "편승효과",
+          "동조효과",
+          "군중심리"
+        ],
+        "reject_too_narrow": [
+          "창가 좌석 배치",
+          "웨이팅 줄 관리",
+          "레스토랑 좌석 수"
+        ],
+        "reject_too_broad": [
+          "마케팅",
+          "심리학",
+          "소비자 행동"
+        ],
+        "reject_wrong": [
+          "광고 전략",
+          "가격 정책",
+          "음식의 질"
+        ],
+        "note": "레스토랑 주인들이 손님의 관심(신호)이 다른 손님을 끌어들이는 사회적 증거·편승효과를 이용한다는 방향이면 accept, 구체적 좌석배치 등 수단으로 좁히면 narrow, 마케팅 일반으로 넓히면 broad"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "?",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "신호",
+        "사회적 증거",
+        "손님",
+        "인기",
+        "피드백 루프",
+        "편승"
+      ],
+      "answer": 1,
+      "sentences": [
+        "Restaurateurs ______________________________.",
+        "They know that the more customers you seat, the more will come in the door.",
+        "This is why they seat the first customers close to the window and don't mind a line of people waiting.",
+        "They understand that the more people signaling their interest, the greater the reinforcing feedback loop.",
+        "People who were on the fence will be drawn in by the apparent interest."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch09_01",
+    "question_type": "무관",
+    "difficulty": 4,
+    "passage": "English words for the phenomenon of psychosocial dependence rely on the prefix \"self-\" to such a degree that one could interpret this as a linguistic protest. (1)Someone's \"self-esteem\" or \"self-image\" is largely a function of how others treat her. (2)Imagine yourself in a version of Gulliver's Travels where people admire you, and later you arrive where you come off as a boring fool. (3)It is unlikely that your \"self-image\" would be very stable over the course of this adventure. (4)External feedback proves far less decisive than one's own inner standards, suggesting that one's \"self-\" concepts can be formed independently of how others respond. (5)Given the degree to which a sense of self-worth is determined extrinsically, it would be more accurate to call it a \"sense of other-worth.\"",
+    "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "자기존중감의 외부성",
+        "accept": [
+          "자존감",
+          "자기평가",
+          "자기개념",
+          "자아상",
+          "자존감의 근원",
+          "타인에 의한 자기평가"
+        ],
+        "reject_too_narrow": [
+          "걸리버 여행기",
+          "자기이미지의 안정성",
+          "내적 기준",
+          "외부 피드백의 정의"
+        ],
+        "reject_too_broad": [
+          "인간",
+          "사회",
+          "심리",
+          "삶",
+          "언어"
+        ],
+        "reject_wrong": [
+          "자기계발",
+          "독립성",
+          "내적 동기",
+          "자립심",
+          "자기통제"
+        ],
+        "note": "자존감·자기개념이 실제로는 타인의 평가에 의해 결정된다는 방향이면 인정, 너무 구체적 예시(걸리버 여행기 등)나 상위어(인간, 사회 등)는 거부, 자립·내적 기준 강조는 방향이 반대이므로 거부"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "?",
+        "+",
+        "+",
+        "+",
+        "-",
+        "+"
+      ],
+      "theme_keywords": [
+        "자존감",
+        "자기개념",
+        "타인",
+        "외부적",
+        "결정",
+        "다른 사람의 평가"
+      ],
+      "answer": 4,
+      "sentences": [
+        "English words for the phenomenon of psychosocial dependence rely on the prefix \"self-\" to such a degree that one could interpret this as a linguistic protest.",
+        "(1)Someone's \"self-esteem\" or \"self-image\" is largely a function of how others treat her.",
+        "(2)Imagine yourself in a version of Gulliver's Travels where people admire you, and later you arrive where you come off as a boring fool.",
+        "(3)It is unlikely that your \"self-image\" would be very stable over the course of this adventure.",
+        "(4)External feedback proves far less decisive than one's own inner standards, suggesting that one's \"self-\" concepts can be formed independently of how others respond.",
+        "(5)Given the degree to which a sense of self-worth is determined extrinsically, it would be more accurate to call it a \"sense of other-worth.\""
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch09_02",
+    "question_type": "무관",
+    "difficulty": 4,
+    "passage": "Social media becomes more meaningful when the firm uses it to collaborate with clients to develop new products. (1)Clients become part of the creation and delivery of products, and become more invested in the firm. (2)Social media can assist in client co-creation by enabling clients to communicate their ideas to firms more easily. (3)They can interact with other users and experience a sense of community, eventually developing closer relationships with the firm. (4)One must keep in mind that there are challenges when measuring the effectiveness of social media marketing that increase skepticism among firms. (5)Social media thus creates value both for clients and firms by facilitating co-creation.",
+    "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "소셜미디어 공동창조",
+        "accept": [
+          "소셜미디어 마케팅",
+          "고객 공동창조",
+          "소셜미디어와 고객참여",
+          "기업과 고객의 협업",
+          "소셜미디어를 통한 가치창출"
+        ],
+        "reject_too_narrow": [
+          "소셜미디어 효과 측정의 어려움",
+          "기업의 회의감",
+          "소셜미디어 상의 커뮤니티 형성",
+          "고객 아이디어 소통 방식"
+        ],
+        "reject_too_broad": [
+          "마케팅",
+          "기업 경영",
+          "인간관계",
+          "소통",
+          "비즈니스"
+        ],
+        "reject_wrong": [
+          "소셜미디어의 부작용",
+          "개인정보 보호",
+          "소셜미디어 중독",
+          "광고의 위험성"
+        ],
+        "note": "소셜미디어를 활용한 고객과의 공동창조(co-creation) 및 그로 인한 가치 창출이라는 방향이면 accept, 세부 사례(측정 어려움, 회의감 등)로 좁히면 too_narrow, 마케팅/소통 등 상위어는 too_broad로 채점."
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "-",
+        "+"
+      ],
+      "theme_keywords": [
+        "소셜미디어",
+        "공동창조",
+        "고객",
+        "기업",
+        "가치창출",
+        "협력"
+      ],
+      "answer": 4,
+      "sentences": [
+        "Social media becomes more meaningful when the firm uses it to collaborate with clients to develop new products.",
+        "(1)Clients become part of the creation and delivery of products, and become more invested in the firm.",
+        "(2)Social media can assist in client co-creation by enabling clients to communicate their ideas to firms more easily.",
+        "(3)They can interact with other users and experience a sense of community, eventually developing closer relationships with the firm.",
+        "(4)One must keep in mind that there are challenges when measuring the effectiveness of social media marketing that increase skepticism among firms.",
+        "(5)Social media thus creates value both for clients and firms by facilitating co-creation."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch09_03",
+    "question_type": "무관",
+    "difficulty": 4,
+    "passage": "We might miss moments of caring connection due to selective attention. In a famous study, people counted basketball passes. (1)During the video, a person in a gorilla outfit walks through the court, waves, and leaves. (2)Up to 50 percent of people did not notice the gorilla because their attention was focused on the basketball. (3)Caring moments can be similarly hidden in plain sight. (4)We often choose to consciously avoid what is right in front of our eyes because facing it would mean confronting truths we are not ready to accept. (5)Because our goals often direct our attention to other things, we fail to notice the energy of care that pervades our lives.",
+    "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "선택적 주의",
+        "accept": [
+          "선택적 주의",
+          "주의",
+          "집중",
+          "관심",
+          "인지",
+          "알아차림",
+          "지각"
+        ],
+        "reject_too_narrow": [
+          "고릴라 실험",
+          "농구공 세기",
+          "무주의맹시 사례",
+          "돌봄의 순간"
+        ],
+        "reject_too_broad": [
+          "삶",
+          "인간관계",
+          "사회",
+          "심리"
+        ],
+        "reject_wrong": [
+          "기억력",
+          "창의력",
+          "시간관리",
+          "감정조절"
+        ],
+        "note": "선택적 주의로 인해 소중한 순간(돌봄)을 놓친다는 방향이면 인정, 구체적 실험 예시나 지나치게 넓은 인간관계/삶 등은 감점"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "선택적 주의",
+        "돌봄",
+        "연결",
+        "놓침",
+        "알아차림",
+        "무주의맹시"
+      ],
+      "answer": 4,
+      "sentences": [
+        "We might miss moments of caring connection due to selective attention.",
+        "In a famous study, people counted basketball passes. (1)During the video, a person in a gorilla outfit walks through the court, waves, and leaves. (2)Up to 50 percent of people did not notice the gorilla because their attention was focused on the basketball. (3)Caring moments can be similarly hidden in plain sight. (4)We often choose to consciously avoid what is right in front of our eyes because facing it would mean confronting truths we are not ready to accept. (5)Because our goals often direct our attention to other things, we fail to notice the energy of care that pervades our lives."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch09_04",
+    "question_type": "무관",
+    "difficulty": 4,
+    "passage": "Although the positives are often overlooked, break-ups can be extremely beneficial. Separation enables people to escape harmful relationships. (1)Even when left devastated, all is not lost as individuals are likely to experience growth. (2)Tashiro and Frazier found that after a relationship ends, individuals reported greater self-confidence and better relationships with others. (3)Relationship satisfaction is typically an important factor for deciding whether a relationship can be sustained or whether it should end. (4)Break-ups can act as a catalyst for making big life changes, enabling individuals to grow beyond their previous level. (5)Maybe it is time to view separation not just as an end but as a new opportunity to grow.",
+    "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 3,
+    "rubric": {
+      "topic": {
+        "canonical": "이별",
+        "accept": [
+          "헤어짐",
+          "결별",
+          "이별의 긍정적 효과",
+          "연인관계 종료",
+          "브레이크업"
+        ],
+        "reject_too_narrow": [
+          "자신감 향상",
+          "타시로와 프레이저의 연구",
+          "관계 만족도"
+        ],
+        "reject_too_broad": [
+          "인간관계",
+          "삶",
+          "변화",
+          "성장"
+        ],
+        "reject_wrong": [
+          "연애의 시작",
+          "결혼 생활",
+          "우정의 지속",
+          "사랑의 유지"
+        ],
+        "note": "이별(결별) 자체가 소재이며, 그로 인한 긍정적 효과(성장)라는 방향이 핵심이므로 '이별'이나 '헤어짐' 등은 인정, 지나치게 세부적인 연구 내용이나 지나치게 포괄적인 '인간관계'는 거부."
+      },
+      "intro_type": "통념",
+      "polarity": [
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "이별",
+        "성장",
+        "기회",
+        "자신감",
+        "관계 개선",
+        "삶의 변화"
+      ],
+      "answer": 3,
+      "sentences": [
+        "Although the positives are often overlooked, break-ups can be extremely beneficial.",
+        "Separation enables people to escape harmful relationships. (1)Even when left devastated, all is not lost as individuals are likely to experience growth. (2)Tashiro and Frazier found that after a relationship ends, individuals reported greater self-confidence and better relationships with others. (3)Relationship satisfaction is typically an important factor for deciding whether a relationship can be sustained or whether it should end. (4)Break-ups can act as a catalyst for making big life changes, enabling individuals to grow beyond their previous level. (5)Maybe it is time to view separation not just as an end but as a new opportunity to grow."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch09_05",
+    "question_type": "무관",
+    "difficulty": 5,
+    "passage": "Why do migrant bird species migrate away from the equatorial tropics? Nest predators permeate the tropics. (1)Nest failure rates in the tropics well exceed those in the temperate zone, providing an advantage to nesting in the temperate zone. (2)There is no predictable insect flush during the tropical year, and thus the density of protein-rich insects is much higher during spring in the temperate zone. (3)Thus, temperate zone nesting birds have an easier time finding protein-rich food for nestlings. (4)The uniformity of daylight hours in the tropics creates stable and favorable climate conditions for tropical bird species. (5)Day length in the tropics is about 12 hours, much shorter than summer days in northern latitudes; thus tropical birds have less foraging time.",
+    "question": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 4,
+    "rubric": {
+      "topic": {
+        "canonical": "철새 이동",
+        "accept": [
+          "철새의 이주",
+          "조류 이동",
+          "철새 이동 원인",
+          "열대 이탈 이유",
+          "계절 이동"
+        ],
+        "reject_too_narrow": [
+          "둥지 포식자",
+          "곤충 밀도",
+          "낮의 길이"
+        ],
+        "reject_too_broad": [
+          "동물",
+          "생태계",
+          "자연",
+          "생명체"
+        ],
+        "reject_wrong": [
+          "기후 변화",
+          "서식지 파괴",
+          "새의 노래",
+          "조류 보호"
+        ],
+        "note": "철새가 왜 열대지방을 떠나 온대지방으로 이동하는지에 관한 소재로, 원인(포식자·먹이·낮길이)까지 언급하면 세부로 지나치게 좁힌 것으로 간주"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "?",
+        "+"
+      ],
+      "theme_keywords": [
+        "철새",
+        "열대",
+        "온대",
+        "둥지 포식자",
+        "먹이 부족",
+        "낮의 길이"
+      ],
+      "answer": 4,
+      "sentences": [
+        "Why do migrant bird species migrate away from the equatorial tropics?",
+        "Nest predators permeate the tropics. (1)Nest failure rates in the tropics well exceed those in the temperate zone, providing an advantage to nesting in the temperate zone. (2)There is no predictable insect flush during the tropical year, and thus the density of protein-rich insects is much higher during spring in the temperate zone. (3)Thus, temperate zone nesting birds have an easier time finding protein-rich food for nestlings. (4)The uniformity of daylight hours in the tropics creates stable and favorable climate conditions for tropical bird species. (5)Day length in the tropics is about 12 hours, much shorter than summer days in northern latitudes; thus tropical birds have less foraging time."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch10_01",
+    "question_type": "순서",
+    "difficulty": 4,
+    "passage": "[주어진 글] Hormesis is defined as a phenomenon in which a harmful substance gives stimulating and beneficial effects to living organisms when the quantity is small. Exercise is the easiest example.\n\n(A) However, if you did a 45-minute walk and some push-ups, your body could adapt to this light stress, and you'd grow stronger. Over time the goal is to create a higher hormetic ceiling.\n\n(B) If your first workout back will be a CrossFit one, your body will have a hard time adapting, you'll be sore for days, and you may even hurt yourself. You'd have fallen out of your hormetic zone.\n\n(C) Let's say you've been sedentary for 10 years, and you hear about CrossFit. CrossFit is a 60-minute, high-intensity workout often involving Olympic lifts.",
+    "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "choices": [
+      "(A)-(C)-(B)",
+      "(B)-(A)-(C)",
+      "(B)-(C)-(A)",
+      "(C)-(A)-(B)",
+      "(C)-(B)-(A)"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "호르메시스",
+        "accept": [
+          "호르메시스",
+          "적당한 스트레스",
+          "운동 강도 조절",
+          "자극과 적응"
+        ],
+        "reject_too_narrow": [
+          "크로스핏",
+          "팔굽혀펴기",
+          "산책 운동"
+        ],
+        "reject_too_broad": [
+          "운동",
+          "건강",
+          "삶의 방식"
+        ],
+        "reject_wrong": [
+          "질병 치료",
+          "영양 섭취",
+          "수면 습관"
+        ],
+        "note": "소량의 유해 자극이 오히려 유익한 결과를 낳는다는 호르메시스 개념과 그 방향성(적당한 스트레스=유익, 과도한 스트레스=해로움)을 다루면 정답으로 인정. 특정 운동 종목(크로스핏 등)만 언급하면 지나치게 좁음, 운동 일반이나 건강 등은 지나치게 넓음."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "?",
+        "-",
+        "?"
+      ],
+      "theme_keywords": [
+        "호르메시스",
+        "소량",
+        "자극",
+        "적응",
+        "유익",
+        "과도한 스트레스"
+      ],
+      "answer": 5,
+      "sentences": [
+        "[주어진 글] Hormesis is defined as a phenomenon in which a harmful substance gives stimulating and beneficial effects to living organisms when the quantity is small.",
+        "Exercise is the easiest example. (A) However, if you did a 45-minute walk and some push-ups, your body could adapt to this light stress, and you'd grow stronger.",
+        "Over time the goal is to create a higher hormetic ceiling. (B) If your first workout back will be a CrossFit one, your body will have a hard time adapting, you'll be sore for days, and you may even hurt yourself.",
+        "You'd have fallen out of your hormetic zone. (C) Let's say you've been sedentary for 10 years, and you hear about CrossFit.",
+        "CrossFit is a 60-minute, high-intensity workout often involving Olympic lifts."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch10_02",
+    "question_type": "순서",
+    "difficulty": 4,
+    "passage": "[주어진 글] Some scientists argue that the universe is deterministic because they can accurately predict the behaviour of many things, and have become better at doing so.\n\n(A) Similarly, physicists can predict how magnetism will move objects, and chemists can predict chemical reactions, in ways unimaginable a century ago. Many bits of the natural world are now predictable.\n\n(B) But today, using equations discovered by Newton and Einstein, astronomers can accurately predict the return of comets decades into the future, the trajectories of spacecraft, and the orbits of planets.\n\n(C) Science progresses and increases our understanding. There is only one direction: ever better predictions. For example, 500 years ago we were poor at predicting celestial events.",
+    "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "choices": [
+      "(A)-(C)-(B)",
+      "(B)-(A)-(C)",
+      "(B)-(C)-(A)",
+      "(C)-(A)-(B)",
+      "(C)-(B)-(A)"
+    ],
+    "answer": 5,
+    "rubric": {
+      "topic": {
+        "canonical": "과학의 예측 능력 발전",
+        "accept": [
+          "과학적 예측",
+          "예측 능력의 발전",
+          "과학기술의 발전",
+          "결정론적 우주관",
+          "자연현상 예측"
+        ],
+        "reject_too_narrow": [
+          "혜성 궤도 예측",
+          "행성 궤도 계산",
+          "화학 반응 예측",
+          "자기장 예측"
+        ],
+        "reject_too_broad": [
+          "과학",
+          "사회",
+          "인간",
+          "자연"
+        ],
+        "reject_wrong": [
+          "운명론",
+          "종교적 믿음",
+          "예술적 창조성",
+          "역사적 사건"
+        ],
+        "note": "핵심은 '과학이 시간이 갈수록 자연현상을 더 정확히 예측하게 되었다'는 방향. 특정 사례(천문학, 화학 등)로 좁히면 too_narrow, '과학' 전체나 '인간','사회' 등으로 확장하면 too_broad."
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "예측",
+        "과학",
+        "발전",
+        "결정론",
+        "우주",
+        "정확성"
+      ],
+      "answer": 5,
+      "sentences": [
+        "[주어진 글] Some scientists argue that the universe is deterministic because they can accurately predict the behaviour of many things, and have become better at doing so. (A) Similarly, physicists can predict how magnetism will move objects, and chemists can predict chemical reactions, in ways unimaginable a century ago.",
+        "Many bits of the natural world are now predictable. (B) But today, using equations discovered by Newton and Einstein, astronomers can accurately predict the return of comets decades into the future, the trajectories of spacecraft, and the orbits of planets. (C) Science progresses and increases our understanding.",
+        "There is only one direction: ever better predictions.",
+        "For example, 500 years ago we were poor at predicting celestial events."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch10_03",
+    "question_type": "순서",
+    "difficulty": 5,
+    "passage": "[주어진 글] It is hard to get direct evidence of prospective reasoning in animals. But there is now good behavioral evidence. Most of this work has been done with corvids and great apes.\n\n(A) Rationally, one solves this problem by imagining various things one might do until one hits on the correct solution. The simplest hypothesis is that the animals do the same.\n\n(B) For instance, animals from both groups can solve the \"floating peanut\" problem by insight. This is the problem of how to reach a food-item too far down in a clear tube to be reached by hand or beak.\n\n(C) The solution is to spit water into the tube (chimps), or drop stones into the tube (rooks), to float the item up. The same problem is solved by most 8-year-old children, but hardly any 4-year-olds.",
+    "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "choices": [
+      "(A)-(C)-(B)",
+      "(B)-(A)-(C)",
+      "(B)-(C)-(A)",
+      "(C)-(A)-(B)",
+      "(C)-(B)-(A)"
+    ],
+    "answer": 3,
+    "rubric": {
+      "topic": {
+        "canonical": "동물의 통찰적 문제해결",
+        "accept": [
+          "동물의 예측적 추론",
+          "동물의 통찰력",
+          "동물 인지",
+          "동물의 문제해결 능력",
+          "까마귀와 유인원의 사고"
+        ],
+        "reject_too_narrow": [
+          "플로팅 피넛 문제",
+          "침팬지의 물 뿜기 행동",
+          "바위를 넣는 까마귀 실험"
+        ],
+        "reject_too_broad": [
+          "동물",
+          "지능",
+          "자연",
+          "생물의 행동"
+        ],
+        "reject_wrong": [
+          "인간의 언어능력",
+          "동물의 감정 표현",
+          "생태계 보호",
+          "동물의 사회적 서열"
+        ],
+        "note": "까마귀·유인원 등 동물이 미래를 예측하며 문제를 해결하는 인지능력(통찰)에 관한 소재로 채점, 특정 실험명(플로팅 피넛 등)으로 좁히면 too_narrow"
+      },
+      "intro_type": "주장",
+      "polarity": [
+        "-",
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "동물",
+        "예측적 추론",
+        "통찰",
+        "문제해결",
+        "까마귀",
+        "유인원"
+      ],
+      "answer": 3,
+      "sentences": [
+        "[주어진 글] It is hard to get direct evidence of prospective reasoning in animals.",
+        "But there is now good behavioral evidence.",
+        "Most of this work has been done with corvids and great apes. (A) Rationally, one solves this problem by imagining various things one might do until one hits on the correct solution.",
+        "The simplest hypothesis is that the animals do the same. (B) For instance, animals from both groups can solve the \"floating peanut\" problem by insight.",
+        "This is the problem of how to reach a food-item too far down in a clear tube to be reached by hand or beak. (C) The solution is to spit water into the tube (chimps), or drop stones into the tube (rooks), to float the item up.",
+        "The same problem is solved by most 8-year-old children, but hardly any 4-year-olds."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch10_04",
+    "question_type": "순서",
+    "difficulty": 4,
+    "passage": "[주어진 글] In psychology, there is a concept called intermittent reinforcement that helps us understand the challenges of twenty-first century technology. To illustrate, imagine a mouse in a cage.\n\n(A) That's intermittent reinforcement. The mouse doesn't know when the reward will come, so it checks frequently. Busy people with many communication tools exhibit the same drive.\n\n(B) If you drop a food pellet at the same time every day, the mouse looks for it only at the expected time. If you distribute the pellet at random times, the mouse looks for it virtually all the time.\n\n(C) Email, voicemail, and other forms of communication bring good, neutral, and bad news, and we never know which or when, which creates a strong temptation to check continuously.",
+    "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "choices": [
+      "(A)-(C)-(B)",
+      "(B)-(A)-(C)",
+      "(B)-(C)-(A)",
+      "(C)-(A)-(B)",
+      "(C)-(B)-(A)"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "간헐적 강화",
+        "accept": [
+          "간헐적 강화",
+          "불규칙한 보상",
+          "무작위 보상",
+          "예측 불가능한 보상",
+          "간헐강화 이론"
+        ],
+        "reject_too_narrow": [
+          "쥐 실험",
+          "먹이 알갱이 지급 시간",
+          "이메일 확인 습관",
+          "음성메시지 확인"
+        ],
+        "reject_too_broad": [
+          "심리학",
+          "인간 행동",
+          "기술",
+          "현대 사회"
+        ],
+        "reject_wrong": [
+          "시간 관리",
+          "스트레스 해소법",
+          "집중력 향상",
+          "수면 부족 문제"
+        ],
+        "note": "보상이 불규칙/무작위로 주어질 때 확인 행동이 강화된다는 심리학 개념 자체를 소재로 인정, 쥐나 이메일 같은 구체 예시로 좁히면 too_narrow"
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "+",
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "theme_keywords": [
+        "간헐적 강화",
+        "불규칙한 보상",
+        "예측 불가능성",
+        "지속적 확인",
+        "커뮤니케이션 기기",
+        "습관적 체크"
+      ],
+      "answer": 2,
+      "sentences": [
+        "[주어진 글] In psychology, there is a concept called intermittent reinforcement that helps us understand the challenges of twenty-first century technology.",
+        "To illustrate, imagine a mouse in a cage. (A) That's intermittent reinforcement.",
+        "The mouse doesn't know when the reward will come, so it checks frequently.",
+        "Busy people with many communication tools exhibit the same drive. (B) If you drop a food pellet at the same time every day, the mouse looks for it only at the expected time.",
+        "If you distribute the pellet at random times, the mouse looks for it virtually all the time. (C) Email, voicemail, and other forms of communication bring good, neutral, and bad news, and we never know which or when, which creates a strong temptation to check continuously."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  },
+  {
+    "id": "SN2027_ch10_05",
+    "question_type": "순서",
+    "difficulty": 5,
+    "passage": "[주어진 글] One of the agreed features of morality is that it involves actions perceived to be binding on people. This is the ought or should quality of morality.\n\n(A) By contrast, in psychology the sense of ought has been psychologized, with a search for psychological mechanisms that produce accommodations to the values and norms of society.\n\n(B) Many moral philosophers have characterized procedures and reasoning that lead to a sense of obligation. In that case, judgments about obligations can be compatible with opposition to cultural practices.\n\n(C) Morality, then, is basically a form of compliance that becomes part of the individual through habits, conscience, or traits. In that context, opposition would be viewed as coming from nonmoral individual drives.",
+    "question": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "choices": [
+      "(A)-(C)-(B)",
+      "(B)-(A)-(C)",
+      "(B)-(C)-(A)",
+      "(C)-(A)-(B)",
+      "(C)-(B)-(A)"
+    ],
+    "answer": 2,
+    "rubric": {
+      "topic": {
+        "canonical": "도덕성",
+        "accept": [
+          "도덕",
+          "도덕성",
+          "의무감",
+          "도덕적 의무",
+          "도덕의 본질"
+        ],
+        "reject_too_narrow": [
+          "심리학적 순응 기제",
+          "문화적 관습에 대한 반대",
+          "개인의 습관과 양심"
+        ],
+        "reject_too_broad": [
+          "사회",
+          "인간",
+          "삶",
+          "윤리 전반"
+        ],
+        "reject_wrong": [
+          "경제 성장",
+          "과학 기술 발전",
+          "교육 제도 개혁"
+        ],
+        "note": "도덕(성)의 '해야 함'이라는 의무적 성격을 철학과 심리학이 어떻게 다르게 설명하는지가 핵심이므로, '도덕'·'의무감' 관련 단어는 인정하고 세부 기제(순응, 반대 등)로 좁힌 답은 거부한다."
+      },
+      "intro_type": "배경지식",
+      "polarity": [
+        "?",
+        "+",
+        "-",
+        "-"
+      ],
+      "theme_keywords": [
+        "도덕",
+        "의무감",
+        "철학적 관점",
+        "심리학적 관점",
+        "순응",
+        "반대"
+      ],
+      "answer": 2,
+      "sentences": [
+        "[주어진 글] One of the agreed features of morality is that it involves actions perceived to be binding on people.",
+        "This is the ought or should quality of morality. (A) By contrast, in psychology the sense of ought has been psychologized, with a search for psychological mechanisms that produce accommodations to the values and norms of society. (B) Many moral philosophers have characterized procedures and reasoning that lead to a sense of obligation.",
+        "In that case, judgments about obligations can be compatible with opposition to cultural practices. (C) Morality, then, is basically a form of compliance that becomes part of the individual through habits, conscience, or traits.",
+        "In that context, opposition would be viewed as coming from nonmoral individual drives."
+      ],
+      "model": "claude-sonnet-5"
+    }
+  }
+]
