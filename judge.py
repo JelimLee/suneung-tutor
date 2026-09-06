@@ -23,12 +23,18 @@ responses.jsonl(Phase 2 출력)의 각 응답을 루브릭으로 채점한다.
      신뢰도 미확정 상태로 취급할 것.
 """
 
-import argparse, csv, json, os, re, sys
+import argparse
+import csv
+import json
+import os
+import re
+import sys
+from typing import Any, Dict, List
 
 JUDGE_MODEL = "claude-sonnet-4-6"  # 생성 모델과 동일 — self-preference 편향 가능성을
                                    # 보고서에 한계로 명시하거나, opus로 바꿔 교차 검증
 
-STRATEGIES = ["GL", "LO", "FR", "EX", "CM", "CF"]
+STRATEGIES: List[str] = ["GL", "LO", "FR", "EX", "CM", "CF"]
 
 JUDGE_SYSTEM = """당신은 교육 AI 설명 품질 평가자입니다. 수능 영어 튜터 응답을 아래 루브릭으로 채점하고, 반드시 JSON만 출력하세요 (서문·백틱 금지).
 
@@ -49,7 +55,12 @@ context_relevance: 1 발췌가 문제와 무관 / 2 부분 관련 / 3 문제·�
 {"GL":0,"LO":0,"FR":0,"EX":0,"CM":0,"CF":0,"accuracy":0,"depth":1,"pedagogy":1,"actionability":0,"groundedness":null,"context_relevance":null,"rationale":"한 문장 근거"}"""
 
 
-def build_user(rec):
+def build_user(rec: Dict[str, Any]) -> str:
+    """한 응답 레코드를 Judge용 user 메시지로 조립한다.
+
+    retrieved_texts 가 없으면 groundedness/context_relevance 를 null 로 두라고
+    명시한다 — no_rag 조건에 RAG 축 점수가 붙는 오염을 막는 장치.
+    """
     parts = [f"[문제 유형] {rec['question_type']}",
              f"[학생 질문] {rec['student_question']}",
              f"[튜터 응답]\n{rec['response']}"]
@@ -61,7 +72,8 @@ def build_user(rec):
     return "\n\n".join(parts)
 
 
-def call_judge(user):
+def call_judge(user: str) -> Dict[str, Any]:
+    """Judge 모델을 한 번 호출하고 JSON 한 덩어리로 파싱한다."""
     import anthropic
     client = anthropic.Anthropic()
     r = client.messages.create(model=JUDGE_MODEL, max_tokens=512,
@@ -72,14 +84,15 @@ def call_judge(user):
     return json.loads(text)
 
 
-def main():
+def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--responses", required=True)
     ap.add_argument("--out", default="judge_scores.csv")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    recs = [json.loads(l) for l in open(args.responses, encoding="utf-8")]
+    with open(args.responses, encoding="utf-8") as fh:
+        recs = [json.loads(line) for line in fh if line.strip()]
     if not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
         sys.exit("ANTHROPIC_API_KEY 필요 (또는 --dry-run)")
 

@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from typing import Optional, Tuple
 
 import httpx
@@ -38,8 +39,6 @@ def _first_sentence(passage: Optional[str]) -> str:
         return ""
     collapsed = " ".join(passage.split()).strip()
     # split on sentence terminators followed by whitespace; take the first chunk.
-    import re
-
     parts = re.split(r"(?<=[.!?])\s+", collapsed)
     return parts[0] if parts else ""
 

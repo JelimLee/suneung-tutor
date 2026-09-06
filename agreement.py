@@ -14,14 +14,15 @@ kappa 유병률 역설 대응: 대부분이 1(또는 0)로 코딩된 전략은 �
       python agreement.py --self-test   # 합성 데이터로 수식·역설 검증
 """
 
-import argparse, csv
-from collections import Counter
+import argparse
+import csv
+from typing import Dict, List, Optional, Tuple
 
 STRATEGIES = ["GL", "LO", "FR", "EX", "CM", "CF"]
 
 
-def cohen_kappa(a, b):
-    """이진 레이블 리스트 두 개의 Cohen's kappa. 정의 불능(분모 0)이면 None."""
+def cohen_kappa(a: List[int], b: List[int]) -> Tuple[Optional[float], float]:
+    """이진 레이블 두 열의 (kappa, Po). 양쪽이 전부 같은 값이면 kappa는 None."""
     n = len(a)
     po = sum(1 for x, y in zip(a, b) if x == y) / n
     pa1, pb1 = sum(a) / n, sum(b) / n
@@ -31,12 +32,14 @@ def cohen_kappa(a, b):
     return (po - pe) / (1 - pe), po
 
 
-def pabak(po):
+def pabak(po: float) -> float:
+    """Prevalence-Adjusted Bias-Adjusted Kappa. 유병률이 극단이어도 붕괴하지 않는다."""
     return 2 * po - 1
 
 
-def load(path):
-    rows = {}
+def load(path: str) -> Dict[Tuple[str, str], Dict[str, int]]:
+    """CSV를 {(problem_id, condition): {전략: 0|1}} 로 읽는다."""
+    rows: Dict[Tuple[str, str], Dict[str, int]] = {}
     with open(path, encoding="utf-8-sig") as fh:
         for r in csv.DictReader(fh):
             key = (r["problem_id"], r["condition"])
@@ -44,7 +47,11 @@ def load(path):
     return rows
 
 
-def report(judge, human):
+def report(
+    judge: Dict[Tuple[str, str], Dict[str, int]],
+    human: Dict[Tuple[str, str], Dict[str, int]],
+) -> None:
+    """전략별 + pooled 로 Po·kappa·PABAK 을 출력한다."""
     keys = sorted(set(judge) & set(human))
     if not keys:
         print("공통 키 없음 — problem_id/condition 열 확인")
@@ -66,7 +73,7 @@ def report(judge, human):
     print("      둘 다 낮으면 Judge 루브릭·프롬프트를 수정하고 재검증할 것.")
 
 
-def self_test():
+def self_test() -> None:
     """유병률 역설 재현: 20건 중 19건이 1로 일치, 1건만 불일치."""
     a = [1]*19 + [1]
     b = [1]*19 + [0]

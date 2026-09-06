@@ -22,8 +22,11 @@ problems.jsonl 한 줄 형식:
    "answer": 5, "student_question": "학생이 실제로 물을 법한 질문"}
 """
 
-import argparse, json, os, sys
-from pathlib import Path
+import argparse
+import json
+import os
+import sys
+
 import numpy as np
 
 MODEL = "claude-sonnet-4-6"
@@ -76,10 +79,16 @@ class DummyEmbedder:
             for j in range(len(t) - 2):
                 M[i, hash(t[j:j+3]) % dim] += 1
         return normalize(M)
-    docs = queries = lambda self, ts: self._e(ts)
+    def docs(self, ts):
+        return self._e(ts)
+
+    def queries(self, ts):
+        return self._e(ts)
 
 def load_jsonl(p):
-    return [json.loads(l) for l in open(p, encoding="utf-8")]
+    """JSONL 파일을 dict 리스트로. 빈 줄은 건너뛴다."""
+    with open(p, encoding="utf-8") as fh:
+        return [json.loads(line) for line in fh if line.strip()]
 
 def build_units(episodes, subchunks, max_chars=1500):
     by_parent = {}
