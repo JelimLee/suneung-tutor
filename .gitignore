@@ -30,6 +30,23 @@ dist-ssr
 provided/episodes.jsonl
 provided/subchunks.jsonl
 
+# Python — 평가 스크립트 / api 포트
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# 평가 파이프라인 산출물 (재생성 가능, 응답 원문 포함 가능)
+responses.jsonl
+judge_scores.csv
+human_codes.csv
+/eval_out/
+
+# e2e 스크린샷
+.e2e-artifacts/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

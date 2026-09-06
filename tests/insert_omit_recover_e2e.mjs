@@ -1,13 +1,17 @@
 import { chromium } from 'playwright'
-import { readFileSync } from 'node:fs'
+import { mkdirSync, readFileSync } from 'node:fs'
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 // ── e2e: 삽입(insert) + 무관(omit) Phase-5 오답 회복, ★조건3 1-retry 하드캡 재확인 ──
 // Verifies the behavior change: reselect-wrong now goes STRAIGHT to handoff (no
 // re-diagnosis loop), while the preserved features (삽입 self-explanation fill-in
 // on done, 무관 reconnect-pair on done, diagnose/5a-5b flow) still work.
 
-const SCRATCH =
-  '/private/tmp/claude-501/-Users-macbook-projects-suneung-tutor/8b3710be-22a1-4059-8449-822d8aa1e2bb/scratchpad'
+// Screenshot sink. Defaults to a repo-local, git-ignored folder so the test is
+// runnable on any machine; override with SCRATCH=/some/dir.
+const SCRATCH = process.env.SCRATCH ?? resolve(dirname(fileURLToPath(import.meta.url)), '../.e2e-artifacts')
+mkdirSync(SCRATCH, { recursive: true })
 const BASE = process.env.BASE ?? process.env.BASE_URL ?? 'http://localhost:5174'
 
 const INSERT_ID = 'SN2027_ch11_01' // answer 4, anaphor contrast
