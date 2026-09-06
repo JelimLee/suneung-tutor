@@ -17,7 +17,9 @@ responses.jsonl(Phase 2 출력)의 각 응답을 루브릭으로 채점한다.
 
 사용:
   export ANTHROPIC_API_KEY=...
-  python judge.py --responses responses.jsonl --out judge_scores.csv [--dry-run]
+  python judge.py --responses responses.jsonl --out judge_scores.csv
+  python judge.py --responses responses.jsonl --dry-run   # 프롬프트만 출력
+  python judge.py --responses responses.jsonl --mock      # 배선 점검(가짜 점수)
 
 주의: Judge 점수는 인간 코딩과의 kappa/PABAK 검증(agreement.py) 전까지
      신뢰도 미확정 상태로 취급할 것.
@@ -25,6 +27,7 @@ responses.jsonl(Phase 2 출력)의 각 응답을 루브릭으로 채점한다.
 
 import argparse
 import csv
+import hashlib
 import json
 import os
 import re
@@ -83,6 +86,28 @@ def parse_judge_json(text: str) -> Dict[str, Any]:
     return json.loads(text)
 
 
+def mock_judge(user: str) -> Dict[str, Any]:
+    """API 키 없이 파이프라인 배선만 점검하기 위한 결정적 가짜 채점기.
+
+    ⚠️ 여기서 나온 점수는 **평가 결과가 아니다.** 입력 문자열 해시로 만든 값이라
+    품질과 아무 상관이 없다. 확인하려는 것은 오직 (1) 열 스키마가 맞는지
+    (2) CSV 인코딩이 깨지지 않는지 (3) agreement.py 가 이 파일을 읽는지 뿐이다.
+    실제 수치가 필요하면 ANTHROPIC_API_KEY 를 넣고 --mock 없이 돌린다.
+    """
+    h = hashlib.sha256(user.encode("utf-8")).digest()
+    has_rag = "[리트리벌 발췌] 없음" not in user
+    return {
+        **{s: h[i] % 2 for i, s in enumerate(STRATEGIES)},
+        "accuracy": h[6] % 3,
+        "depth": 1 + h[7] % 3,
+        "pedagogy": 1 + h[8] % 3,
+        "actionability": h[9] % 3,
+        "groundedness": (1 + h[10] % 3) if has_rag else None,
+        "context_relevance": (1 + h[11] % 3) if has_rag else None,
+        "rationale": "MOCK — 실제 채점 아님",
+    }
+
+
 def call_judge(user: str) -> Dict[str, Any]:
     """Judge 모델을 한 번 호출하고 점수 JSON으로 파싱한다."""
     import anthropic
@@ -97,13 +122,19 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--responses", required=True)
     ap.add_argument("--out", default="judge_scores.csv")
-    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="API 호출 없이 Judge 프롬프트만 출력")
+    ap.add_argument("--mock", action="store_true",
+                    help="API 키 없이 결정적 가짜 점수로 파이프라인 배선만 점검")
     args = ap.parse_args()
 
     with open(args.responses, encoding="utf-8") as fh:
         recs = [json.loads(line) for line in fh if line.strip()]
-    if not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
-        sys.exit("ANTHROPIC_API_KEY 필요 (또는 --dry-run)")
+    if args.mock:
+        print("⚠️  MOCK 모드 — 아래 점수는 배선 점검용이며 평가 결과가 아닙니다.",
+              file=sys.stderr)
+    elif not args.dry_run and not os.environ.get("ANTHROPIC_API_KEY"):
+        sys.exit("ANTHROPIC_API_KEY 필요 (또는 --dry-run / --mock)")
 
     fields = ["problem_id", "condition", "question_type", *STRATEGIES,
               "accuracy", "depth", "pedagogy", "actionability",
@@ -117,7 +148,7 @@ def main() -> None:
                 print(f"--- {rec['problem_id']}/{rec['condition']} ---\n{user[:300]}\n")
                 continue
             try:
-                score = call_judge(user)
+                score = mock_judge(user) if args.mock else call_judge(user)
             except Exception as e:
                 print(f"실패 {rec['problem_id']}/{rec['condition']}: {e}")
                 continue
@@ -127,6 +158,8 @@ def main() -> None:
             print(f"{rec['problem_id']}/{rec['condition']} 채점 완료")
 
     print(f"\n저장: {args.out}")
+    if args.mock:
+        print("⚠️  MOCK 점수 — 보고서·README 에 인용 금지.")
     print("다음 단계: 동일 응답을 직접 코딩한 human_codes.csv를 만들고 agreement.py로 kappa/PABAK 검증")
 
 

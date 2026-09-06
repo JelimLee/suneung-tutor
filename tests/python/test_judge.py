@@ -85,6 +85,45 @@ class TestParseJudgeJson(unittest.TestCase):
             judge.parse_judge_json("죄송하지만 채점할 수 없습니다.")
 
 
+class TestMockJudge(unittest.TestCase):
+    """--mock 은 API 키 없이 배선만 점검하는 모드다. 점수 자체엔 의미가 없지만,
+    스키마와 조건 분리는 실채점과 똑같이 지켜야 배선 점검이 의미를 가진다."""
+
+    def test_is_deterministic(self):
+        u = judge.build_user(RAG_REC)
+        self.assertEqual(judge.mock_judge(u), judge.mock_judge(u))
+
+    def test_emits_every_csv_column(self):
+        out = judge.mock_judge(judge.build_user(RAG_REC))
+        for axis in [*judge.STRATEGIES, "accuracy", "depth", "pedagogy",
+                     "actionability", "groundedness", "context_relevance", "rationale"]:
+            self.assertIn(axis, out, axis)
+
+    def test_no_rag_gets_null_rag_axes(self):
+        """실채점과 같은 누출 통제 — 발췌가 없으면 RAG 축은 null 이어야 한다."""
+        out = judge.mock_judge(judge.build_user(NO_RAG_REC))
+        self.assertIsNone(out["groundedness"])
+        self.assertIsNone(out["context_relevance"])
+
+    def test_rag_gets_scored_rag_axes(self):
+        out = judge.mock_judge(judge.build_user(RAG_REC))
+        self.assertIn(out["groundedness"], (1, 2, 3))
+        self.assertIn(out["context_relevance"], (1, 2, 3))
+
+    def test_scores_stay_inside_the_rubric_ranges(self):
+        out = judge.mock_judge(judge.build_user(RAG_REC))
+        for s in judge.STRATEGIES:
+            self.assertIn(out[s], (0, 1))
+        self.assertIn(out["accuracy"], (0, 1, 2))
+        self.assertIn(out["depth"], (1, 2, 3))
+        self.assertIn(out["pedagogy"], (1, 2, 3))
+        self.assertIn(out["actionability"], (0, 1, 2))
+
+    def test_rationale_is_labelled_as_fake(self):
+        """CSV 만 보고 실채점으로 착각하는 사고를 막는다."""
+        self.assertIn("MOCK", judge.mock_judge(judge.build_user(RAG_REC))["rationale"])
+
+
 class TestRubricContract(unittest.TestCase):
     def test_six_strategies(self):
         self.assertEqual(judge.STRATEGIES, ["GL", "LO", "FR", "EX", "CM", "CF"])
