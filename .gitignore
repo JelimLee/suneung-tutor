@@ -30,6 +30,11 @@ dist-ssr
 provided/episodes.jsonl
 provided/subchunks.jsonl
 
+# Supabase CLI 로컬 상태 — 링크된 프로젝트 ref·조직 id·풀러 URL 등 머신 로컬 값.
+# `supabase link` 가 재생성하므로 버전관리 대상이 아니다.
+supabase/.temp/
+supabase/.branches/
+
 # Python — 평가 스크립트 / api 포트
 __pycache__/
 *.py[cod]
