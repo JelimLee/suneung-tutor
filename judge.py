@@ -72,16 +72,25 @@ def build_user(rec: Dict[str, Any]) -> str:
     return "\n\n".join(parts)
 
 
+def parse_judge_json(text: str) -> Dict[str, Any]:
+    """Judge 원문 출력에서 점수 JSON을 뽑는다.
+
+    루브릭에서 "백틱 금지"라고 지시했지만 모델은 종종 코드펜스를 붙인다.
+    파싱 실패로 응답 하나를 통째로 버리는 것보다 펜스를 벗기는 쪽이 낫다.
+    호출부와 분리해 둔 것은 이 파싱을 네트워크 없이 테스트하기 위해서다.
+    """
+    text = re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.M).strip()
+    return json.loads(text)
+
+
 def call_judge(user: str) -> Dict[str, Any]:
-    """Judge 모델을 한 번 호출하고 JSON 한 덩어리로 파싱한다."""
+    """Judge 모델을 한 번 호출하고 점수 JSON으로 파싱한다."""
     import anthropic
     client = anthropic.Anthropic()
     r = client.messages.create(model=JUDGE_MODEL, max_tokens=512,
                                system=JUDGE_SYSTEM,
                                messages=[{"role": "user", "content": user}])
-    text = r.content[0].text.strip()
-    text = re.sub(r"^```(json)?|```$", "", text, flags=re.M).strip()
-    return json.loads(text)
+    return parse_judge_json(r.content[0].text)
 
 
 def main() -> None:
