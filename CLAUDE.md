@@ -27,7 +27,7 @@
   - `schema.sql` — 테이블 + pgvector + RLS 정책 (수정 없이 그대로 적용)
   - `functions/tutor-chat/index.ts` — Claude API Edge Function
   - `migrate_to_pgvector.py` — 교사 청크 업서트
-  - `episodes.jsonl`, `subchunks.jsonl` — 리트리벌 코퍼스
+  - (비공개) 과외 전사 리트리벌 코퍼스 — 개인정보라 저장소에 포함하지 않음. `problems_sample.jsonl`은 합성 샘플
 - 디자인: rimstudy 톤 (크림 배경 #FDF8F0 계열, 핑크 액센트 필, 세이지 태그).
 
 ## 절대 규칙 (모든 서브에이전트 지침에 포함)
