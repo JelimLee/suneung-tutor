@@ -11,7 +11,7 @@ problems.jsonl 한 줄 형식:
   export SUPABASE_URL=https://<ref>.supabase.co
   export SUPABASE_SERVICE_ROLE_KEY=...
   pip install supabase
-  python seed_problems.py --file problems_ebs.jsonl [--dry-run]
+  python seed_problems.py --file ../problems_sample.jsonl [--dry-run]
 
 주의: problems 테이블의 컬럼(source, difficulty, student_question)이 없으면
       먼저 SQL Editor에서 ALTER로 추가해야 함 (아래 안내 참조).
